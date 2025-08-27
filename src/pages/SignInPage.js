@@ -15,12 +15,14 @@ export function SignIn({ navigation }) {
             </View>
             <View style={styles.headerContainer}>
                 <Text style={styles.headerTitle}>Acesse</Text>
-                <Text style={styles.headerSubtitle}>com e-mail e senha</Text>
+                <Text style={styles.headerSubtitle}>com E-mail e senha</Text>
             </View>
             <View style={styles.formContainer}>
                 <View style={styles.inputGroup}>
                     <Text style={styles.inputLabel}>E-mail:</Text>
-                    <TextInput placeholder="Digite seu E-mail" style={styles.textInput} keyboardType="email-address" />
+                    <View style={styles.emailInputContainer}>
+                        <TextInput placeholder="Digite seu E-mail" style={styles.textInput} keyboardType="email-address" />
+                    </View>
                 </View>
 
                 <View style={styles.inputGroup}>
@@ -83,7 +85,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#fff',
-        padding: 20,
+        padding: 10,
     },
     arrowContainer: {
         marginTop: 50,
@@ -97,14 +99,14 @@ const styles = StyleSheet.create({
     },
     headerTitle: {
         color: '#2a3844',
-        fontSize: 30,
+        fontSize: 35,
         fontWeight: '600',
         textAlign: 'left',
     },
     headerSubtitle: {
         color: '#2a3844',
         fontSize: 15,
-        fontWeight: '500',
+        fontWeight: '400',
         textAlign: 'left',
     },
     formContainer: {
@@ -128,6 +130,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#E3E7F3',
         padding: 10,
         borderRadius: 8,
+        height: 50,
     },
     passwordInputContainer: {
         backgroundColor: '#E3E7F3',
@@ -136,6 +139,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         paddingRight: 20,
         borderRadius: 8,
+        height: 50,
     },
     passwordTextInput: {
         maxWidth: '90%',
@@ -155,31 +159,33 @@ const styles = StyleSheet.create({
     },
     rememberText: {
         color: '#2a3844',
-        fontSize: 15,
+        fontSize: 14,
         fontWeight: '500',
         textAlign: 'left',
     },
     forgotPasswordText: {
         color: '#2a3844',
-        fontSize: 15,
+        fontSize: 14,
         fontWeight: '500',
         textAlign: 'left',
     },
     buttonsContainer: {
-        width: '100%',
+        width: '90%',
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
         paddingHorizontal: '5%',
-        marginTop: 30,
+        marginTop: 35,
+        gap: 15,
+        marginLeft: -5,
     },
     loginButton: {
         backgroundColor: '#14C871',
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        width: '50%',
-        height: 50,
+        width: '55%',
+        height: 60,
         borderRadius: 10,
     },
     loginButtonText: {
@@ -195,8 +201,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        width: '45%',
-        height: 50,
+        width: '55%',
+        height: 60,
         borderRadius: 10,
     },
     registerButtonText: {
@@ -208,7 +214,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-evenly',
         alignItems: 'center',
-        marginTop: 40,
+        marginTop: 90,
         width: '90%',
         marginLeft: '5%',
     },

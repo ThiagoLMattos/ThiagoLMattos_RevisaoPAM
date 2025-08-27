@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
     },
     imageContainer: {
+        marginTop: 115,
         marginVertical: 70,
         display: 'flex',
         flexDirection: 'column',
@@ -52,12 +53,13 @@ const styles = StyleSheet.create({
         width: '100%',
     },
     title: {
-        fontSize: 30,
+        fontSize: 40,
         fontWeight: '600',
         textAlign: 'center',
     },
     subtitle: {
         fontSize: 15,
+        marginTop: 10,
         fontWeight: '500',
         textAlign: 'center',
     },
@@ -67,7 +69,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'space-evenly',
         alignItems: 'center',
-        marginTop: 30,
+        marginTop: 50,
         gap: 20,
     },
     googleButton: {
@@ -76,7 +78,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         width: '80%',
-        height: 50,
+        height: 60,
         borderRadius: 10,
     },
     googleIcon: {
@@ -99,7 +101,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         width: '80%',
-        height: 50,
+        height: 60,
         borderRadius: 10,
     },
     optionsButtonText: {
