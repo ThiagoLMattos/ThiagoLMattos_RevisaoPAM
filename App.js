@@ -13,7 +13,7 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName={'Login'}>
           <Stack.Screen name='Login' component={LoginPage}/>
-          <Stack.Screen name='SignIn' component={SignIn}/>
+          <Stack.Screen name='SignIn' component={SignInPage}/>
         </Stack.Navigator>
       </NavigationContainer>
     </GestureHandlerRootView>
