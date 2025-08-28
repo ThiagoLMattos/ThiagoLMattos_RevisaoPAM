@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { LoginPage } from './src/pages/LoginPage';
-import { SignIn } from './src/pages/SignInPage';
+import { SignInPage } from './src/pages/SignInPage';
 
 const Stack = createStackNavigator();
 
@@ -27,4 +27,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
 });
